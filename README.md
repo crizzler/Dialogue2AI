@@ -9,6 +9,7 @@ This repository contains the Unity asset source under `Assets/ImmersiveNPCs`. It
 - Asset README: [Assets/ImmersiveNPCs/README.md](Assets/ImmersiveNPCs/README.md)
 - Quick start: [Assets/ImmersiveNPCs/Documentation/QUICKSTART.md](Assets/ImmersiveNPCs/Documentation/QUICKSTART.md)
 - License: [MIT](Assets/ImmersiveNPCs/LICENSE.md)
+- Third-party notices: [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt)
 
 ## Included
 
