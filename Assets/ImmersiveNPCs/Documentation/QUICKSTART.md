@@ -8,6 +8,7 @@ This guide gets one Yarn Spinner NPC running with AI-generated dialogue and fixe
   - Cloud: OpenAI, Claude, or DeepSeek.
   - Local server: Ollama or an OpenAI-compatible local server such as LM Studio.
   - Local file: In-Process for `.gguf`, or Sentis for `.sentis` plus `tokenizer.json`.
+- Unity AI Inference/Sentis is optional. Immersive NPCs compiles without it; install `com.unity.ai.inference` only if you select the Sentis backend.
 
 ## 2. Create Settings
 1. Open `Edit > Project Settings > Immersive NPCs`.

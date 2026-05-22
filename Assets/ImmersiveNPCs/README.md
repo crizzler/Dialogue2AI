@@ -2,7 +2,7 @@
 
 ## Requirements
 - Yarn Spinner is required for the included dialogue adapter, example scene, and template workflow.
-- Unity Sentis is required only if you choose the Sentis local backend.
+- Unity AI Inference/Sentis is optional. Immersive NPCs compiles without it; install `com.unity.ai.inference` only if you choose the Sentis local backend.
 
 ## License
 Immersive NPCs is released under the MIT License. See `Assets/ImmersiveNPCs/LICENSE.md`.
@@ -39,6 +39,7 @@ The hub node calls ai_prefetch, then displays options using variables. Each opti
   - Requires the native in-process backend plugin (llama.cpp-based). See the setup notes below.
 - Placeholder: drop models into the folder set in Project Settings (.gguf, .ggml, .bin) and swap in a real engine via ILocalInferenceEngine.
 - Sentis:
+  - The base package compiles without Unity AI Inference/Sentis installed. If you select Sentis without the package, Project Settings and runtime status report that `com.unity.ai.inference` is missing.
   - Sentis does not load `.gguf`. Use In-Process for GGUF models.
   - Sentis LLM availability is much smaller than GGUF availability. Search broadly for Unity Sentis text-generation models, for example Phi, SmolLM, or TinyStories.
   - Drop `.sentis` models into `Assets/StreamingAssets/ImmersiveNPCs/Models`.

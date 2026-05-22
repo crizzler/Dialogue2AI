@@ -795,6 +795,13 @@ namespace ImmersiveNPCs.Editor
 
         private static void DrawSentisBackendHelp()
         {
+            if (!IsSentisPackageAvailable())
+            {
+                EditorGUILayout.HelpBox(
+                    "Unity AI Inference/Sentis is not installed. Immersive NPCs still compiles, but the Sentis backend will stay unavailable until package com.unity.ai.inference is installed.",
+                    MessageType.Error);
+            }
+
             EditorGUILayout.HelpBox(
                 "Sentis does not load .gguf files. Use In-Process for GGUF models. The Sentis backend expects a .sentis model plus a Hugging Face tokenizer.json.",
                 MessageType.Warning);
@@ -802,6 +809,12 @@ namespace ImmersiveNPCs.Editor
             EditorGUILayout.HelpBox(
                 "Built-in Sentis glue loads the model/tokenizer and runs a simple autoregressive loop for common causal-LM inputs (input_ids, attention_mask, position_ids, token_type_ids). KV-cache or custom-input exports may need a model-specific runner.",
                 MessageType.Info);
+        }
+
+        private static bool IsSentisPackageAvailable()
+        {
+            return System.Type.GetType("Unity.InferenceEngine.ModelLoader, Unity.InferenceEngine", false) != null
+                && System.Type.GetType("Unity.InferenceEngine.Tokenization.Parsers.HuggingFace.HuggingFaceParser, Unity.InferenceEngine.Tokenization", false) != null;
         }
 
         private static void DrawHorizontalLine()

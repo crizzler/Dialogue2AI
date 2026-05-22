@@ -1,9 +1,6 @@
 {
   "name": "ImmersiveNPCs.Runtime",
-  "references": [
-    "Unity.InferenceEngine",
-    "Unity.InferenceEngine.Tokenization"
-  ],
+  "references": [],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
