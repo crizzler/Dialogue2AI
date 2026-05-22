@@ -1,0 +1,45 @@
+title: AI_Hub
+---
+<<declare $ai_npc_line = "">>
+<<declare $ai_opt_0 = "">>
+<<declare $ai_opt_1 = "">>
+<<declare $ai_opt_2 = "">>
+<<declare $ai_opt_3 = "">>
+<<declare $ai_opt_count = 0>>
+<<declare $ai_last_choice = "">>
+<<ai_prefetch npcId="npc_1" slots=4>>
+{$ai_npc_line}
+
+-> {$ai_opt_0}
+    <<jump AI_Opt_0>>
+-> {$ai_opt_1}
+    <<jump AI_Opt_1>>
+-> {$ai_opt_2}
+    <<jump AI_Opt_2>>
+-> {$ai_opt_3}
+    <<jump AI_Opt_3>>
+===
+
+title: AI_Opt_0
+---
+<<ai_choose slot=0>>
+<<jump AI_Hub>>
+===
+
+title: AI_Opt_1
+---
+<<ai_choose slot=1>>
+<<jump AI_Hub>>
+===
+
+title: AI_Opt_2
+---
+<<ai_choose slot=2>>
+<<jump AI_Hub>>
+===
+
+title: AI_Opt_3
+---
+<<ai_choose slot=3>>
+<<jump AI_Hub>>
+===

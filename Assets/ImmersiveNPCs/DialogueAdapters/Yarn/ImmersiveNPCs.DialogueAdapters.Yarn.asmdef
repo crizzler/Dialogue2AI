@@ -1,0 +1,16 @@
+{
+  "name": "ImmersiveNPCs.DialogueAdapters.Yarn",
+  "references": [
+    "ImmersiveNPCs.Runtime",
+    "YarnSpinner.Unity"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true,
+  "defineConstraints": [
+    "IMMERSIVE_NPCS_YARN"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

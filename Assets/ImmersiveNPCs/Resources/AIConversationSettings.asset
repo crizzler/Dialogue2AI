@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaee22b4fe4e97eda8a0423f22680af2, type: 3}
+  m_Name: AIConversationSettings
+  m_EditorClassIdentifier: ImmersiveNPCs.Runtime::ImmersiveNPCs.AIConversationSettings
+  providerMode: 0
+  localBackend: 3
+  localModelFolder: StreamingAssets/ImmersiveNPCs/Models
+  selectedLocalModel: TheBloke/Mistral-7B-Instruct-v0.2-GGUF/mistral-7b-instruct-v0.2.Q4_K_M.gguf
+  ollamaEndpoint: http://localhost:11434/api/chat
+  ollamaModelName: llama3
+  localOpenAIEndpoint: http://localhost:1234/v1/chat/completions
+  localOpenAIModelName: h2o-danube-1.8b-chat
+  localOpenAIUseApiKey: 0
+  localInProcessDevice: 1
+  localInProcessChatTemplateMode: 0
+  localInProcessContextSize: 8192
+  localInProcessThreads: 4
+  localInProcessGpuLayers: 0
+  localInProcessUseMmap: 1
+  localInProcessUseMlock: 0
+  localInProcessAllowHostMemory: 1
+  localInProcessSeed: 0
+  localInProcessDefaultMaxTokens: 256
+  localInProcessPreloadModel: 1
+  localInProcessAutoConfig: 1
+  localInProcessLoadTimeoutSeconds: 120
+  localInProcessLoadRetryCount: 2
+  localInProcessLoadRetryDelayMs: 1000
+  localSentisDevice: 1
+  localSentisTokenizerFile: tokenizer.json
+  localSentisMaxContextTokens: 2048
+  localSentisInputIdsName: input_ids
+  localSentisAttentionMaskName: attention_mask
+  localSentisLogitsOutputName: 
+  localSentisStopTokenIds: 
+  localSentisPreloadModel: 1
+  cloudProvider: 0
+  cloudModelName: gpt-4.1-mini
+  cloudEndpoint: https://api.openai.com/v1/responses
+  apiKeyMode: 0
+  apiKeyEnvVar: OPENAI_API_KEY
+  apiKeyTextAsset: {fileID: 0}
+  apiKeyText: 
+  slotsCount: 4
+  maxTokens: 512
+  temperature: 0.8
+  topP: 1
+  presencePenalty: 0
+  frequencyPenalty: 0
+  requestTimeoutMs: 20000
+  retryCount: 2
+  retryBackoffMs: 500
+  memoryCacheEntries: 128
+  diskCacheEnabled: 1
+  diskCachePath: Library/ImmersiveNPCs/Cache
+  diskCacheTtlMinutes: 1440
+  enableCoherenceValidation: 1
+  enableSpeculativePrefetch: 0
+  speculativePrefetchDepth: 2
+  speculativePrefetchMaxNodes: 12
+  prefetchMaxConcurrent: 2
+  enableMemory: 1
+  memoryScope: 2
+  memoryTopK: 6
+  memoryMaxChars: 1200
+  memoryMaxEntries: 512
+  memoryMaxEntriesPerNpc: 128
+  memoryStorePlayerChoices: 1
+  memoryStoreNpcReplies: 1
+  memoryUseTimeDecay: 1
+  memoryDecayHalfLifeMinutes: 60
+  embeddingProviderMode: 0
+  embeddingModelName: text-embedding-3-small
+  embeddingEndpoint: https://api.openai.com/v1/embeddings
+  memorySeeds: []
+  summarizationEnabled: 1
+  maxRecentTurns: 12
+  summaryTokenBudget: 256
+  maxLineLength: 280
+  maxOptionLength: 120
+  forbiddenTopics: []
+  stayInCharacter: 1
+  strictRespondToChoice: 1
+  injectChoiceAsLastUserMessage: 1
+  language: en
+  perceptionRadius: 8
+  maxPerceptionSignals: 12
+  huggingFaceUseToken: 0
+  huggingFaceTokenEnvVar: HF_TOKEN
+  huggingFaceTokenAsset: {fileID: 0}
+  huggingFaceSearchLimit: 25
+  enableTieredContext: 1
+  qualityPreset: 1
+  enablePlanningPhase: 1
+  enableStreamingGeneration: 0
+  enableStructuredMemory: 0
+  enableScriptAuthority: 1
+  enableWorldStateValidation: 1
+  validationStrictness: 1
+  enableRuntimeOverlay: 1
+  verboseLogging: 1
+  enableInProcessLogging: 1
+  enableTimingLogs: 0
+  enableValidationLogs: 0

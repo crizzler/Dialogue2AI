@@ -1,0 +1,15 @@
+{
+  "name": "ImmersiveNPCs.Editor",
+  "references": [
+    "ImmersiveNPCs.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

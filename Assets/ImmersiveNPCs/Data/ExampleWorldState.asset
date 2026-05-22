@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888e741a5fc735a6eb890a43089ddfd3, type: 3}
+  m_Name: ExampleWorldState
+  m_EditorClassIdentifier:
+  gameName: Chronicles of Aldoria
+  baseContext: |
+    This is a medieval fantasy world called Aldoria. Magic exists but is rare and viewed with suspicion by common folk. The kingdom is ruled by King Aldric III from the capital city of Thornhaven.
+    
+    The world is recovering from a devastating war with the Northern Clans that ended five years ago. Trade routes are slowly reopening, but bandit activity remains high in the borderlands.
+    
+    Key locations:
+    - Thornhaven: The capital city, seat of the king
+    - Millbrook: A small farming village (player's starting location)
+    - The Whisperwood: A mysterious forest said to be home to ancient spirits
+    - Ironhold: A dwarven mining town in the eastern mountains
+    - The Shattered Coast: Western shoreline, known for pirates and smugglers
+  currentChapter: Chapter 1 - A Humble Beginning
+  completedPlotPoints:
+    - Player arrived in Millbrook
+    - Met the village elder
+  loreConstraints: |
+    IMPORTANT - NPCs must follow these rules:
+    - Magic users are called "Touched" and are rare (1 in 1000 people)
+    - The old gods are worshipped, not a single deity
+    - Dragons are extinct (or so everyone believes)
+    - The Northern Clans are not evil, just culturally different
+    - Currency: copper bits, silver marks, gold crowns (100:10:1 ratio)
+    - No gunpowder or advanced technology exists
+    - Elves and dwarves exist but are uncommon outside their homelands
+  timeOfDay: 1
+  weather: 0
+  factions:
+    - factionId: crown
+      name: The Crown
+      description: Royal government and loyalists
+    - factionId: merchant_guild
+      name: Merchant Guild
+      description: Traders and craftsmen union
+    - factionId: northern_clans
+      name: Northern Clans
+      description: Former enemies, now uneasy neighbors
+    - factionId: whisper_circle
+      name: The Whisper Circle
+      description: Secret society of magic users
+  customFacts:
+    - key: current_season
+      value: Late Summer
+    - key: king_health
+      value: Ailing, rumors of succession crisis
+    - key: trade_status
+      value: Recovering, prices still high
+    - key: bandit_threat
+      value: High in borderlands
+    - key: harvest_outlook
+      value: Good this year

@@ -1,0 +1,56 @@
+# Unity generated folders
+/Library/
+/Temp/
+/Obj/
+/obj/
+/Logs/
+/UserSettings/
+/MemoryCaptures/
+/Recordings/
+/Build/
+/Builds/
+/ProfilerCaptures/
+
+# Local model downloads and runtime data
+/StreamingAssets/ImmersiveNPCs/Models/
+/Assets/StreamingAssets/ImmersiveNPCs/Models/
+/Library/ImmersiveNPCs/
+
+# Keep this repository scoped to the Immersive NPCs asset.
+# The surrounding Unity project contains local test scenes and third-party assets.
+/Assets/*
+!/Assets/ImmersiveNPCs/
+!/Assets/ImmersiveNPCs.meta
+/Packages/*
+/ProjectSettings/*
+
+# Unity generated project files
+/*.csproj
+/*.sln
+/*.slnx
+/*.pidb
+/*.booproj
+/*.svd
+/*.user
+/*.userprefs
+/*.unityproj
+
+# Crash dumps and diagnostics
+/mono_crash.*
+/sysinfo.txt
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Rider
+/.idea/
+/*.DotSettings.user
+
+# Visual Studio cache
+/.vs/
+
+# Asset Store Tools export output
+/*.unitypackage
